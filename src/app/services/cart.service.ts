@@ -94,7 +94,7 @@ export class CartService {
         this.cartDataServer.data[0].numInCart = quantity !== undefined ? quantity : 1;
         //   calculate total amount cartDataServer.total
         this.calculateTotal();
-        console.log('ok');
+
 
         this.cartDataClient.prodData[0].inCart = this.cartDataServer.data[0].numInCart;
         this.cartDataClient.prodData[0].id = prod.id;
@@ -124,11 +124,16 @@ export class CartService {
             this.cartDataServer.data[index].numInCart = this.cartDataServer.data[index].numInCart < prod.quantity ? quantity : prod.quantity;
           } else {
             // tslint:disable-next-line:no-unused-expression
-            this.cartDataServer.data[index].numInCart < prod.quantity ? this.cartDataServer.data[index].numInCart++  : prod.quantity;
+            //this.cartDataServer.data[index].numInCart < prod.quantity ? this.cartDataServer.data[index].numInCart++  : prod.quantity;
+            this.cartDataServer.data[index].numInCart = this.cartDataServer.data[index].numInCart + 1;
           }
+
+
+          console.log(this.cartDataServer.data[index].numInCart);
 
           this.cartDataClient.prodData[index].inCart = this.cartDataServer.data[index].numInCart;
           this.calculateTotal();
+
           this.cartDataClient.total = this.cartDataServer.total;
           localStorage.setItem('cart', JSON.stringify(this.cartDataClient));
           console.log('big');
@@ -202,7 +207,7 @@ export class CartService {
       this.cartDataServer.data.splice(index, 1);
       this.cartDataClient.prodData.splice(index, 1);
 
-      // TODO CALCUALTE TOTAL AMOUNT
+      this.calculateTotal(); // REMET A ZERO SI LE PRODUIT EST RETIRE DU PANIER
       this.cartDataClient.total = this.cartDataServer.total;
 
       if (this.cartDataClient.total === 0) {
