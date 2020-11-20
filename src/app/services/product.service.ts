@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {environment} from '../../environments/environment';
+import {Observable} from 'rxjs';
+import {ProductModelServer} from '../models/product.model';
 
 
 @Injectable({
@@ -10,10 +12,8 @@ export class ProductService {
 
   SERVER_URL = environment.SERVER_URL;
 
-  constructor(private http: HttpClient) { }
-
-
-  // tslint:disable-next-line:typedef
+  constructor(private http: HttpClient) {
+  }
   getAllProducts(numberOfResults) {
     return this.http.get(this.SERVER_URL + '/products', {
       params: {
@@ -22,9 +22,15 @@ export class ProductService {
     });
   }
 
-  
+  /*  GET SINGLE PRODUCT FROM SERVER  */
 
+  getSingleProduct(id): Observable<ProductModelServer>{
+    return this.http.get<ProductModelServer>(this.SERVER_URL + '/products/' + id);
+  }
 
+  /* GET PRODUCTS FROM ONE CATEGORY */
 
-
+  GetProductsFromCategory(catName: string): Observable<ProductModelServer>{
+    return this.http.get<ProductModelServer>(this.SERVER_URL + '/products/category' + catName);
+  }
 }

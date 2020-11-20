@@ -12,6 +12,8 @@ import { ProductComponent } from './components/product/product.component';
 import { CartComponent } from './components/cart/cart.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {HttpClientModule} from '@angular/common/http';
+import {NgxSpinnerModule} from 'ngx-spinner';
+import {ToastrModule} from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import {HttpClientModule} from '@angular/common/http';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxSpinnerModule,
+    ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
