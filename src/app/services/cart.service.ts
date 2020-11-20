@@ -124,7 +124,7 @@ export class CartService {
             this.cartDataServer.data[index].numInCart = this.cartDataServer.data[index].numInCart < prod.quantity ? quantity : prod.quantity;
           } else {
             // tslint:disable-next-line:no-unused-expression
-            this.cartDataServer.data[index].numInCart < prod.quantity ? this.cartDataServer.data[index].numInCart++ : prod.quantity;
+            this.cartDataServer.data[index].numInCart < prod.quantity ? this.cartDataServer.data[index].numInCart++  : prod.quantity;
           }
 
           this.cartDataClient.prodData[index].inCart = this.cartDataServer.data[index].numInCart;
@@ -308,7 +308,6 @@ export class CartService {
     });
   }
 
-
   private resetServerData(){
     this.cartDataServer = {
       total: 0,
@@ -319,6 +318,15 @@ export class CartService {
     };
 
     this.cartData$.next({ ... this.cartDataServer});
+  }
+
+  calculateSubTotal(index): number {
+    let subTotal = 0;
+
+    const p = this.cartDataServer.data[index];
+    subTotal = p.product.price * p.numInCart;
+
+    return subTotal;
   }
 
 }
