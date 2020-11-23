@@ -10,7 +10,7 @@ import {ProductModelServer} from '../models/product.model';
 })
 export class ProductService {
 
-  SERVER_URL = environment.SERVER_URL;
+  SERVER_URL = 'http://localhost:3000/api';
 
   constructor(private http: HttpClient) {
   }

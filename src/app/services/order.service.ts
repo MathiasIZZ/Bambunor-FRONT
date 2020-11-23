@@ -8,7 +8,7 @@ import {environment} from '../../environments/environment';
 export class OrderService {
 
   private products: ProductResponseModel[] = [];
-  private SERVER_URL = environment.SERVER_URL;
+  private SERVER_URL = 'http://localhost:3000/api';
 
   constructor(private http: HttpClient) {
   }

@@ -8,8 +8,6 @@ export interface CartModelServer {
   }];
 }
 
-
-
 export interface CartModelPublic {
   total: number;
   prodData: [

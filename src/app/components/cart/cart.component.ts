@@ -10,10 +10,18 @@ import {CartService} from '../../services/cart.service';
 export class CartComponent implements OnInit {
 
   cartData: CartModelServer;
+  cartTotal: number;
+  subTotal: number;
 
   constructor(public cartService: CartService) { }
 
   ngOnInit(): void {
+    this.cartService.cartData$.subscribe( (data: CartModelServer) => this.cartData = data);
+    this.cartService.cartTotal$.subscribe(total => this.cartTotal = total);
+  }
+
+  changeQuantity(index: number, increase: boolean) {
+    this.cartService.updateCartItems(index, increase);
   }
 
 }
