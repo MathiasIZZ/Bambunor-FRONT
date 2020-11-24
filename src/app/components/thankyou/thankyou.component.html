@@ -1,15 +1,61 @@
-<ngx-spinner
-  bdColor="rgba(51,51,51,0.8)"
-  size="medium"
-  color="#fff"
-  type="ball-scale-multiple"
->
-  <p style="font-size: 20px; color: white">Loading...</p>
-</ngx-spinner>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="jumbotron text-center">
+        <h1 class="display-3">Un grand merci pour l'écologie. </h1>
+        <h2 class="display-3">Vous serez livré dans les 24 heures. </h2>
+        <p class="lead"><strong>Please check your email</strong> for order confirmation.</p>
+        <hr>
+        <p>
+
+        <p>Order Id : <strong>{{ orderId }}</strong></p>
+      </div>
+
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th>Image</th>
+          <th>Title</th>
+          <th>Price</th>
+          <th>Quantity</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let p of products">
+          <td>
+            <img [src]="p.image" alt="{{p.name}}" class="img-thumbnail" width="100px">
+          </td>
+          <td>{{p.name}}</td>
+          <td>{{p.price | currency:'USD'}}</td>
+          <td>{{p.quantityOrdered}}</td>
+        </tr>
+
+        <tr class="border-0">
+          <td style="border: none;"></td>
+          <td></td>
+          <td>TOTAL</td>
+          <td>{{cartTotal | currency:'USD'}}</td>
+
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
 
 
+© 2020 GitHub, Inc.
+Terms
+Privacy
 
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
 
-
-
-<p>thankyou works!</p>
