@@ -1,1 +1,156 @@
-<p>checkout works!</p>
+<ngx-spinner
+  bdColor="rgba(51,51,51,0.8)"
+  size="medium"
+  color="#fff"
+  type="ball-scale-multiple"
+>
+  <p style="font-size: 20px; color: white">Loading...</p>
+</ngx-spinner>
+
+
+
+
+<div class="section">
+  <!-- container -->
+  <div class="container">
+    <!-- row -->
+    <div class="row">
+
+      <div class="col-md-7">
+        <!-- Billing Details -->
+        <div class="billing-details">
+          <div class="section-title">
+            <h3 class="title">Adresse de la commande</h3>
+          </div>
+          <div class="form-group">
+            <input class="input" type="text" name="first-name" placeholder="prénom">
+          </div>
+          <div class="form-group">
+            <input class="input" type="text" name="last-name" placeholder="nom">
+          </div>
+          <div class="form-group">
+            <input class="input" type="email" name="email" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <input class="input" type="text" name="address" placeholder="Adresse">
+          </div>
+          <div class="form-group">
+            <input class="input" type="text" name="city" placeholder="Ville">
+          </div>
+          <div class="form-group">
+            <input class="input" type="text" name="country" placeholder="Pays">
+          </div>
+          <div class="form-group">
+            <input class="input" type="text" name="zip-code" placeholder="Code Postal">
+          </div>
+          <div class="form-group">
+            <input class="input" type="tel" name="tel" placeholder="Téléphone">
+          </div>
+          <div class="form-group">
+            <div class="input-checkbox">
+              <input type="checkbox" id="create-account">
+              <label for="create-account">
+                <span></span>
+                Vous n'avez pas encore de compte ? Créez en un dès maintenant en cochant la case!
+              </label>
+              <div class="caption">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                <input class="input" type="password" name="password" placeholder="Tapez votre mot de pass">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Billing Details -->
+
+        <!-- Shiping Details -->
+        <div class="shiping-details">
+          <div class="section-title">
+            <h3 class="title">Adresse de livraison</h3>
+          </div>
+          <div class="input-checkbox">
+            <input type="checkbox" id="shiping-address">
+            <label for="shiping-address">
+              <span></span>
+              Utiliser une adresse différente ?
+            </label>
+            <div class="caption">
+              <div class="form-group">
+                <input class="input" type="text" name="first-name" placeholder="First Name">
+              </div>
+              <div class="form-group">
+                <input class="input" type="text" name="last-name" placeholder="Last Name">
+              </div>
+              <div class="form-group">
+                <input class="input" type="email" name="email" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <input class="input" type="text" name="address" placeholder="Address">
+              </div>
+              <div class="form-group">
+                <input class="input" type="text" name="city" placeholder="City">
+              </div>
+              <div class="form-group">
+                <input class="input" type="text" name="country" placeholder="Country">
+              </div>
+              <div class="form-group">
+                <input class="input" type="text" name="zip-code" placeholder="ZIP Code">
+              </div>
+              <div class="form-group">
+                <input class="input" type="tel" name="tel" placeholder="Telephone">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Shiping Details -->
+
+        <!-- Order notes -->
+        <div class="order-notes">
+          <textarea class="input" placeholder="Order Notes"></textarea>
+        </div>
+        <!-- /Order notes -->
+      </div>
+
+      <!-- Order Details -->
+      <div class="col-md-5 order-details">
+        <div class="section-title text-center">
+          <h3 class="title">Votre commande gourmande</h3>
+        </div>
+        <div class="order-summary">
+          <div class="order-col">
+            <div><strong>PRODUIT(S)</strong></div>
+            <div><strong>TOTAL</strong></div>
+
+          </div>
+          <div class="order-products">
+            <div class="order-col" *ngFor="let c of cartData.data">
+              <div>{{ c.numInCart }} x {{ c.product.name }}</div>
+              <div> {{ (c.numInCart * c.product.price) }}</div>
+            </div>
+          <div class="order-col">
+            <div>Frais de livraison</div>
+            <div><strong>GRATUIT*</strong></div>
+          </div>
+          <div class="order-col">
+            <div><strong>TOTAL</strong></div>
+            <div><strong class="order-total">{{ cartTotal }} €</strong></div>
+          </div>
+        </div>
+
+        <div class="input-checkbox">
+          <input type="checkbox" id="terms">
+          <label for="terms">
+            <span></span>
+            J'ai lu et accepté les <a href="#" style="color: red">termes et les conditions du contrat</a>
+          </label>
+        </div>
+          <button class="btn btn-sm order-submit my-2 btn-block btn-outline-danger" (click)="onCheckOut()">Confirmer le paiement</button>
+      </div>
+    </div>
+      <!-- /Order Details -->
+    </div>
+    <!-- /row -->
+  </div>
+  <!-- /container -->
+</div>
+
+

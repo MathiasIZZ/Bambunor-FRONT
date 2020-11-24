@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
               private router: Router) { }
 
   ngOnInit(): void {
-    this.productService.getAllProducts(10).subscribe( (prods: ServerResponse) => {
+    this.productService.getAllProducts(3).subscribe( (prods: ServerResponse) => {
       this.products = prods.products;
       console.log(this.products);
     });

@@ -124,12 +124,9 @@ export class CartService {
             this.cartDataServer.data[index].numInCart = this.cartDataServer.data[index].numInCart < prod.quantity ? quantity : prod.quantity;
           } else {
             // tslint:disable-next-line:no-unused-expression
-            //this.cartDataServer.data[index].numInCart < prod.quantity ? this.cartDataServer.data[index].numInCart++  : prod.quantity;
-            this.cartDataServer.data[index].numInCart = this.cartDataServer.data[index].numInCart + 1;
+            this.cartDataServer.data[index].numInCart < prod.quantity ? this.cartDataServer.data[index].numInCart++  : prod.quantity;
+
           }
-
-
-          console.log(this.cartDataServer.data[index].numInCart);
 
           this.cartDataClient.prodData[index].inCart = this.cartDataServer.data[index].numInCart;
           this.calculateTotal();
@@ -179,10 +176,8 @@ export class CartService {
 
     if (increase) {
 
-      //data.numInCart < data.product.quantity ? data.numInCart++ : data.product.quantity;
-      while (data.numInCart <= data.product.quantity){
-        data.numInCart++;
-      }
+      data.numInCart < data.product.quantity ? data.numInCart++ : data.product.quantity;
+
       console.log(data);
       console.log(data.product);
       console.log(data.product.quantity);
@@ -273,7 +268,7 @@ export class CartService {
       if (res.success) {
         this.resetServerData();
         this.http.post( `${this.SERVER_URL}/orders/new`, {
-          userId: userId,
+          userId,
           products: this.cartDataClient.prodData
         }).subscribe( (data: OrderResponse ) => {
 
@@ -290,7 +285,7 @@ export class CartService {
               };
 
               //  TODO HIDE SPINNER
-              this.spinner.hide();
+              this.spinner.hide().then();
 
               this.router.navigate( ['/thankyou'], navigationExtras).then( p => {
                 this.cartDataClient = {
@@ -308,7 +303,7 @@ export class CartService {
           });
         });
       } else {
-        this.spinner.hide();
+        this.spinner.hide().then();
         this.router.navigateByUrl('/checkout').then();
         this.toast.error(`Nous sommes desolés, nous rencontrons des difficultés..`, 'Statut de la commande', {
           timeOut: 1500,
