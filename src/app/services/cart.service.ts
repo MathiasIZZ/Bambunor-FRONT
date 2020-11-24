@@ -284,8 +284,7 @@ export class CartService {
                 }
               };
 
-              //  TODO HIDE SPINNER
-              this.spinner.hide().then();
+              //this.spinner.hide();
 
               this.router.navigate( ['/thankyou'], navigationExtras).then( p => {
                 this.cartDataClient = {
@@ -303,7 +302,9 @@ export class CartService {
           });
         });
       } else {
-        this.spinner.hide().then();
+
+        //this.spinner.hide();
+
         this.router.navigateByUrl('/checkout').then();
         this.toast.error(`Nous sommes desolés, nous rencontrons des difficultés..`, 'Statut de la commande', {
           timeOut: 1500,

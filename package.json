@@ -21,7 +21,7 @@
     "@angular/router": "~10.1.4",
     "boostrap": "^2.0.0",
     "http-server": "^0.12.3",
-    "ngx-spinner": "^9.0.1",
+    "ngx-spinner": "^10.0.1",
     "ngx-toastr": "^13.1.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",

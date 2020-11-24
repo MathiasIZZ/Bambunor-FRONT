@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
 import {OrderService} from '../../services/order.service';
 import {CartService} from '../../services/cart.service';
-import {NgxSpinnerService} from 'ngx-spinner';
 import {CartModelServer} from '../../models/cart.model';
+import {NgxSpinnerService} from 'ngx-spinner';
 
 @Component({
   selector: 'app-checkout',
@@ -33,9 +33,20 @@ export class CheckoutComponent implements OnInit {
   }*/
 
   onCheckOut() {
-    this.spinner.show().then( p => {
+
+    this.spinner.show();
+    setTimeout(() => {
+      /** spinner ends after 5 seconds */
+      this.spinner.hide();
+    }, 5000);
+    setTimeout( () => {
       this.cartService.checkOutFromCart(2);
-    });
+    }, 5000);
+
   }
+
+
+
+
 
 }
