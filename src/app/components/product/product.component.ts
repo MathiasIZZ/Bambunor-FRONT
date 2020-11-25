@@ -16,16 +16,19 @@ declare let $: any;
 
 export class ProductComponent implements OnInit, AfterViewInit {
 
-  id: number;
+  id: any;
   product;
   thumbImages: any[] = [];
 
   constructor(private cartService: CartService, private productService: ProductService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    /*this.route.paramMap.pipe(
-        map( (param: ParamMap) => {
-          return param.params.id;
+
+    this.route.paramMap.pipe(
+        map( (params: ParamMap) => {
+          // TODO HAVE TO FIX PRODUCT COMPONENT
+          //return param.param.id;
+          return;
         })
       )
       .subscribe( prodId => {
@@ -33,12 +36,12 @@ export class ProductComponent implements OnInit, AfterViewInit {
         this.productService.getSingleProduct(this.id).subscribe( prod => {
           this.product = prod;
 
-          if (prod.images !== null){
-            this.thumbImages = prod.images.split(';');
-          }
         });
-      });*/
+      });
+    console.log(this.product.name);
   }
+
+
 
   ngAfterViewInit(): void {
 
