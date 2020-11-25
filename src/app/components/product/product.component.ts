@@ -23,7 +23,7 @@ export class ProductComponent implements OnInit, AfterViewInit {
   constructor(private cartService: CartService, private productService: ProductService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.route.paramMap.pipe(
+    /*this.route.paramMap.pipe(
         map( (param: ParamMap) => {
           return param.params.id;
         })
@@ -37,7 +37,7 @@ export class ProductComponent implements OnInit, AfterViewInit {
             this.thumbImages = prod.images.split(';');
           }
         });
-      });
+      });*/
   }
 
   ngAfterViewInit(): void {
