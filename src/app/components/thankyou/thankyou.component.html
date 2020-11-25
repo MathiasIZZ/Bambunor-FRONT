@@ -24,18 +24,18 @@
         <tbody>
         <tr *ngFor="let p of products">
           <td>
-            <img [src]="p.image" alt="{{p.name}}" class="img-thumbnail" width="100px">
+            <img [src]="p.image" alt="{{ p.name }}" class="img-thumbnail" width="100px">
           </td>
-          <td>{{p.name}}</td>
-          <td>{{p.price | currency:'USD'}}</td>
-          <td>{{p.quantityOrdered}}</td>
+          <td>{{ p.name}}</td>
+          <td>{{ p.price | currency:'USD'}}</td>
+          <td>{{ p.quantityOrdered }}</td>
         </tr>
 
         <tr class="border-0">
           <td style="border: none;"></td>
           <td></td>
           <td>TOTAL</td>
-          <td>{{cartTotal | currency:'USD'}}</td>
+          <td>{{ cartTotal | currency:'EUR' }}</td>
 
         </tr>
         </tbody>
@@ -44,18 +44,4 @@
   </div>
 </div>
 
-
-© 2020 GitHub, Inc.
-Terms
-Privacy
-
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
 
