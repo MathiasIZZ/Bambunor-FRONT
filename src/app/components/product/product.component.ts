@@ -24,21 +24,13 @@ export class ProductComponent implements OnInit, AfterViewInit {
 
   ngOnInit(): void {
 
-    this.route.paramMap.pipe(
-        map( (params: ParamMap) => {
-          // TODO HAVE TO FIX PRODUCT COMPONENT
-          //return param.param.id;
-          return;
-        })
-      )
-      .subscribe( prodId => {
-        this.id = prodId;
-        this.productService.getSingleProduct(this.id).subscribe( prod => {
-          this.product = prod;
+    // récupération id du produit dans l'url
+    this.id = this.route.snapshot.paramMap.get('id');
 
-        });
-      });
-    console.log(this.product.name);
+    // injection de l'id dans la fct getSingleProduct()
+    this.productService.getSingleProduct(this.id).subscribe( prod => {
+      this.product = prod;
+    });
   }
 
 
