@@ -69,7 +69,7 @@ export function providerConfig() {
           {
             id: GoogleLoginProvider.PROVIDER_ID,
             provider: new GoogleLoginProvider(
-              'clientId'
+              '1021940320321-iql2p0icai5nv9qbviou0i61b6e1u6qf.apps.googleusercontent.com'
             )
           },
         ]

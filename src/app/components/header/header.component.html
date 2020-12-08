@@ -10,7 +10,7 @@
       </ul>
       <ul class="header-links pull-right">
         <li><a href="#"><i class="fa fa-euro"></i> EURO</a></li>
-        <li><a href="#"><i class="fa fa-user-o"></i> Mon compte</a></li>
+        <li><a routerLink="/profile"><i class="fa fa-user-o"></i> {{ authState === false ? 'Se connecter' : 'Mon compte' }} </a></li>
       </ul>
     </div>
   </div>

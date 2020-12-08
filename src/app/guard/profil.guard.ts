@@ -17,7 +17,7 @@ export class ProfilGuard implements CanActivate {
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
 
-    if(this.userService.auth) {
+    if (this.userService.auth) {
 
       return true;
     }

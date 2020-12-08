@@ -17,7 +17,7 @@ export class UserService {
   constructor(private authService: SocialAuthService, private httpClient: HttpClient) {
 
     authService.authState.subscribe( (user) => {
-      if (user !== null ) {
+      if (user != null ) {
         this.auth = true;
         this.authState$.next(this.auth);
         this.userData$.next(user);
@@ -49,7 +49,7 @@ export class UserService {
 
 }
 
-interface ResponseModel {
+export interface ResponseModel {
   token: string;
   auth: boolean;
   email: string;
