@@ -1,1 +1,50 @@
-<p>product works!</p>
+<div class="container">
+  <!--   https://www.jerecho.com/codepen/nike-product-page/ -->
+  <div class="product-image">
+
+    <img  [src]="product.image" alt="{{ product.name }}" class="product-pic">
+    <div class="dots">
+      <a href="#!" class="active"><i>1</i></a>
+      <a href="#!"><i>2</i></a>
+      <a href="#!"><i>3</i></a>
+      <a href="#!"><i>4</i></a>
+    </div>
+  </div>
+  <div class="product-details">
+    <header>
+      <h1 class="title">{{ product.name }}</h1>
+      <span class="colorCat">{{ product.category }}</span>
+      <div class="price">
+        <span class="before">250</span>
+        <span class="current">{{ product.price }} euros.</span>
+      </div>
+      <div class="rate">
+        <a href="#!" class="active">★</a>
+        <a href="#!" class="active">★</a>
+        <a href="#!" class="active">★</a>
+        <a href="#!">★</a>
+        <a href="#!">★</a>
+      </div>
+    </header>
+    <article>
+      <h5>Description</h5>
+      <p>{{ product.description }}</p>
+    </article>
+    <div class="controls">
+      <div class="qty">
+        <h5>Quantité par kilo</h5>
+        <a href="#!" class="option">10 .. 50 Kg</a>
+      </div>
+    </div>
+    <div class="footer">
+      <button type="button">
+        <img src="http://co0kie.github.io/codepen/nike-product-page/cart.png" alt="">
+        <span>Acheter</span>
+      </button>
+      <p>Partager:</p>
+      <a href=""><img src="http://co0kie.github.io/codepen/nike-product-page/share.png" alt=""></a>
+    </div>
+  </div>
+</div>
+
+<a href="https://www.youtube.com/watch?v=qGOxPVHfZuE" target="_blank" title="Watch me speed code this" style="position: fixed; bottom: 10px; right: 10px"><img src="http://co0kie.github.io/codepen/youtube.png" alt=""></a>

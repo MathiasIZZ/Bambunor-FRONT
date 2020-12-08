@@ -14,6 +14,28 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {HttpClientModule} from '@angular/common/http';
 import {NgxSpinnerModule} from 'ngx-spinner';
 import {ToastrModule} from 'ngx-toastr';
+import { LoginComponent } from './components/login/login.component';
+import { ProfileComponent } from './components/profile/profile.component';
+import {FormsModule} from '@angular/forms';
+import {SocialLoginModule, GoogleLoginProvider, SocialAuthServiceConfig, SocialAuthService} from 'angularx-social-login';
+
+
+const googleLoginOptions = {
+  scope: 'profile email'
+};
+
+/*
+let config = new AuthServiceConfig([
+  {
+    id: GoogleLoginProvider.PROVIDER_ID,
+    provider: new GoogleLoginProvider("1021940320321-iql2p0icai5nv9qbviou0i61b6e1u6qf.apps.googleusercontent.com", googleLoginOptions)
+  },
+]);
+
+export function providerConfig() {
+  return config;
+}
+*/
 
 @NgModule({
   declarations: [
@@ -24,7 +46,9 @@ import {ToastrModule} from 'ngx-toastr';
     ThankyouComponent,
     HomeComponent,
     ProductComponent,
-    CartComponent
+    CartComponent,
+    LoginComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,9 +56,26 @@ import {ToastrModule} from 'ngx-toastr';
     AppRoutingModule,
     HttpClientModule,
     NgxSpinnerModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    FormsModule,
+    SocialLoginModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: 'SocialAuthServiceConfig',
+      useValue: {
+        autoLogin: false,
+        providers: [
+          {
+            id: GoogleLoginProvider.PROVIDER_ID,
+            provider: new GoogleLoginProvider(
+              '1021940320321-iql2p0icai5nv9qbviou0i61b6e1u6qf.apps.googleusercontent.com'
+            )
+          },
+        ]
+      } as SocialAuthServiceConfig,
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

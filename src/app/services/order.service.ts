@@ -8,14 +8,14 @@ import {environment} from '../../environments/environment';
 export class OrderService {
 
   private products: ProductResponseModel[] = [];
-  private SERVER_URL = environment.SERVER_URL;
+  private SERVER_URL = 'http://localhost:3000/api';
 
   constructor(private http: HttpClient) {
   }
 
   // tslint:disable-next-line:typedef
   getSingleOrder(orderId: number){
-    return this.http.get<ProductResponseModel[]>(this.SERVER_URL + '/orders' + orderId).toPromise();
+    return this.http.get<ProductResponseModel[]>(this.SERVER_URL + '/orders/' + orderId).toPromise();
   }
 
 }

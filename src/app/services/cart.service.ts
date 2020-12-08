@@ -16,7 +16,7 @@ import {NgxSpinnerService} from 'ngx-spinner';
 })
 export class CartService {
 
-  private SERVER_URL = environment.SERVER_URL;
+  private SERVER_URL = 'http://localhost:3000/api';
 
   /*  VARIABLE DE DONNEES POUR STOCKER LES INFORMATIONS DU PANIER SUR LE LOCAL STORAGE DU NAVIGATEUR DE L'UTILISATEUR  */
   private cartDataClient: CartModelPublic = {
@@ -124,12 +124,9 @@ export class CartService {
             this.cartDataServer.data[index].numInCart = this.cartDataServer.data[index].numInCart < prod.quantity ? quantity : prod.quantity;
           } else {
             // tslint:disable-next-line:no-unused-expression
-            //this.cartDataServer.data[index].numInCart < prod.quantity ? this.cartDataServer.data[index].numInCart++  : prod.quantity;
-            this.cartDataServer.data[index].numInCart = this.cartDataServer.data[index].numInCart + 1;
+            this.cartDataServer.data[index].numInCart < prod.quantity ? this.cartDataServer.data[index].numInCart++  : prod.quantity;
+
           }
-
-
-          console.log(this.cartDataServer.data[index].numInCart);
 
           this.cartDataClient.prodData[index].inCart = this.cartDataServer.data[index].numInCart;
           this.calculateTotal();
@@ -180,6 +177,10 @@ export class CartService {
     if (increase) {
 
       data.numInCart < data.product.quantity ? data.numInCart++ : data.product.quantity;
+
+      console.log(data);
+      console.log(data.product);
+      console.log(data.product.quantity);
       this.cartDataClient.prodData[index].inCart = data.numInCart;
       this.calculateTotal();
       this.cartDataClient.total = this.cartDataServer.total;
@@ -189,12 +190,13 @@ export class CartService {
       data.numInCart--;
 
       if (data.numInCart < 1 ) {
-        // TODO DELETE THE PRODUCT FROM CART
+        this.deleteProductFormCart(index);
         this.cartData$.next({...this.cartDataServer});
       } else {
         this.cartData$.next({ ... this.cartDataServer});
         this.cartDataClient.prodData[index].inCart = data.numInCart;
-        // TODO CALCULATE TOTAL AMOUNT
+        this.calculateTotal();
+
         this.cartDataClient.total = this.cartDataServer.total;
         localStorage.setItem('cart', JSON.stringify(this.cartDataClient));
       }
@@ -266,7 +268,7 @@ export class CartService {
       if (res.success) {
         this.resetServerData();
         this.http.post( `${this.SERVER_URL}/orders/new`, {
-          userId: userId,
+          userId,
           products: this.cartDataClient.prodData
         }).subscribe( (data: OrderResponse ) => {
 
@@ -282,8 +284,7 @@ export class CartService {
                 }
               };
 
-              //  TODO HIDE SPINNER
-              this.spinner.hide();
+              //this.spinner.hide();
 
               this.router.navigate( ['/thankyou'], navigationExtras).then( p => {
                 this.cartDataClient = {
@@ -301,7 +302,9 @@ export class CartService {
           });
         });
       } else {
-        this.spinner.hide();
+
+        //this.spinner.hide();
+
         this.router.navigateByUrl('/checkout').then();
         this.toast.error(`Nous sommes desolés, nous rencontrons des difficultés..`, 'Statut de la commande', {
           timeOut: 1500,
