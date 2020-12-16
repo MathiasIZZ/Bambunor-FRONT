@@ -18,6 +18,7 @@ import { LoginComponent } from './components/login/login.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import {FormsModule} from '@angular/forms';
 import {SocialLoginModule, GoogleLoginProvider, SocialAuthServiceConfig, SocialAuthService} from 'angularx-social-login';
+import { IntroComponent } from './components/intro/intro.component';
 
 
 const googleLoginOptions = {
@@ -49,6 +50,7 @@ export function providerConfig() {
     CartComponent,
     LoginComponent,
     ProfileComponent,
+    IntroComponent,
   ],
   imports: [
     BrowserModule,

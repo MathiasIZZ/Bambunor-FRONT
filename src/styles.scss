@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+html {
+  scrollbar-width: none;
+}
+
+.scrollbar {
+  width: 15px;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 0;
+  background: linear-gradient(to top, #99b6e6, #4364f7, #add3ff);
+
+}
+
+.clickScrollbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 100%;
+  background: rgba(170, 170, 170, 0.356);
+}
+

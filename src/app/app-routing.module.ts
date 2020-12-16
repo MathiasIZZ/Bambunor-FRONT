@@ -8,10 +8,14 @@ import {CheckoutComponent} from './components/checkout/checkout.component';
 import {LoginComponent} from './components/login/login.component';
 import {ProfileComponent} from './components/profile/profile.component';
 import {ProfilGuard} from './guard/profil.guard';
+import {IntroComponent} from './components/intro/intro.component';
 
 const routes: Routes = [
   {
-    path: '', component: HomeComponent
+    path: '', component: IntroComponent
+  },
+  {
+    path: 'home', component: HomeComponent
   },
   {
     path: 'product/:id', component: ProductComponent
