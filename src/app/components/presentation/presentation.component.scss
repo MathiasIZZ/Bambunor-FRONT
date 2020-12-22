@@ -13,7 +13,7 @@
 }
 .left {
   display: flex;
-  width: 35%;
+  width: 25%;
   height: 80vh;
   overflow: hidden;
   flex-direction: column;
@@ -24,11 +24,12 @@
   width: 100%;
   height: 70%;
   padding-top: 2.8rem;
+  border-radius: 10px 10px;
 }
 .right {
   display: flex;
   flex-direction: column;
-  width: 85%;
+  width: 95%;
   padding: 2.5rem !important;
   font-size: 25px !important;
   line-height: 1.5;
@@ -52,7 +53,7 @@
 
 .submain .zetitre {
   font-size: 4rem;
-  -webkit-text-fill-color: rgba(22, 41, 206, 0.3);
+  -webkit-text-fill-color: rgb(141, 182, 66);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgba(255, 255, 255, 0.2);
   margin-right: -200px;
@@ -60,6 +61,15 @@
   -webkit-transform:scaleY(2);
   -moz-transform:scaleY(2);
   -o-transform:scaleY(2);
+
+}
+
+.submain {
+  /*margin: 0% 65% 0% -135%;*/
+}
+
+.sub {
+
 }
 
 
