@@ -9,10 +9,14 @@ import {LoginComponent} from './components/login/login.component';
 import {ProfileComponent} from './components/profile/profile.component';
 import {ProfilGuard} from './guard/profil.guard';
 import {IntroComponent} from './components/intro/intro.component';
+import {PresentationComponent} from './components/presentation/presentation.component';
 
 const routes: Routes = [
   {
     path: '', component: IntroComponent
+  },
+  {
+    path: 'presentation', component: PresentationComponent
   },
   {
     path: 'home', component: HomeComponent

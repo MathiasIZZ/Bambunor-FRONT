@@ -19,6 +19,9 @@ import { ProfileComponent } from './components/profile/profile.component';
 import {FormsModule} from '@angular/forms';
 import {SocialLoginModule, GoogleLoginProvider, SocialAuthServiceConfig, SocialAuthService} from 'angularx-social-login';
 import { IntroComponent } from './components/intro/intro.component';
+import { PresentationComponent } from './components/presentation/presentation.component';
+
+import {NgxParallaxScrollModule} from 'ngx-parallax-scroll';
 
 
 const googleLoginOptions = {
@@ -51,6 +54,7 @@ export function providerConfig() {
     LoginComponent,
     ProfileComponent,
     IntroComponent,
+    PresentationComponent,
   ],
   imports: [
     BrowserModule,
@@ -60,7 +64,8 @@ export function providerConfig() {
     NgxSpinnerModule,
     ToastrModule.forRoot(),
     FormsModule,
-    SocialLoginModule
+    SocialLoginModule,
+    NgxParallaxScrollModule
   ],
   providers: [
     {

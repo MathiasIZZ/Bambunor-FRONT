@@ -1,0 +1,133 @@
+
+
+@font-face {
+  font-family: dinpro;
+  src: url("../../../assets/fonts/DINPro-Regular.otf");
+}
+
+
+.socle {
+  display: flex;
+  margin-top: 50px;
+
+}
+.left {
+  display: flex;
+  width: 35%;
+  height: 80vh;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.left img {
+  width: 100%;
+  height: 70%;
+  padding-top: 2.8rem;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  padding: 2.5rem !important;
+  font-size: 25px !important;
+  line-height: 1.5;
+  justify-content: center;
+}
+
+.right h2 {
+  font-size: 2.5rem !important;
+}
+
+.fontperso {
+  font-family: 'dinpro';
+}
+
+
+.stade {
+  width: 1350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.submain .zetitre {
+  font-size: 4rem;
+  -webkit-text-fill-color: rgba(22, 41, 206, 0.3);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(255, 255, 255, 0.2);
+  margin-right: -200px;
+  line-height: 2em;
+  -webkit-transform:scaleY(2);
+  -moz-transform:scaleY(2);
+  -o-transform:scaleY(2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.galaxy__parallax {
+  position: absolute;
+}
+
+.galaxy__parallax--figure {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.galaxy__generate {
+  position: fixed;
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #333;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 50px;
+  margin: 10px;
+  transition: background-color 0.2s, color 0.15s;
+  outline: none;
+}
+
+.galaxy__generate:hover {
+  background-color: #ff695d;
+  border-color: transparent;
+  color: #fff;
+}

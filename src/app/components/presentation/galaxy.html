@@ -1,0 +1,31 @@
+<div class="contient">
+  <div class="galaxy">
+
+    <button class="galaxy__generate" (click)="onGalaxyGenerate()">Generate galaxy</button>
+
+    <div class="galaxy__parallax galaxy__parallax--figure">
+      <img src="https://github.com/farengeyt451/ngx-parallax-scroll/blob/master/src/assets/pyramid.png?raw=true"
+           @stars
+           class="galaxy__img"
+           alt="parallax-img"
+           ngxParallaxScroll
+           [parallaxSpeed]='0.5'
+           [parallaxSmoothness]='1'
+           [parallaxDirection]='"reverse"'
+           [parallaxTimingFunction]='"linear"'
+           [parallaxThrottleTime]='80'>
+    </div>
+
+    <div class="galaxy__parallax"
+         *ngFor="let star of stars; let i = index"
+         @stars
+         [ngStyle]="{ 'left': star.position.left, 'top': star.position.top }">
+
+      <img [src]="star.img"
+           class="galaxy__img"
+           [alt]="'star-' + i"
+           ngxParallaxScroll
+           [config]="star.conf">
+    </div>
+  </div>
+</div>

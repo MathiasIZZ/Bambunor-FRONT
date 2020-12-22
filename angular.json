@@ -38,7 +38,8 @@
               "src/assets/js/slick.min.js",
               "src/assets/js/nouislider.min.js",
               "src/assets/js/jquery.zoom.min.js",
-              "src/assets/js/scrollbar.js"
+              "src/assets/js/scrollbar.js",
+              "src/assets/js/load.js"
             ]
           },
           "configurations": {
