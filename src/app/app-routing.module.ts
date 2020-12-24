@@ -10,10 +10,14 @@ import {ProfileComponent} from './components/profile/profile.component';
 import {ProfilGuard} from './guard/profil.guard';
 import {IntroComponent} from './components/intro/intro.component';
 import {PresentationComponent} from './components/presentation/presentation.component';
+import {CueilletteComponent} from './components/cueillette/cueillette.component';
 
 const routes: Routes = [
   {
     path: '', component: IntroComponent
+  },
+  {
+    path: 'cueillette', component: CueilletteComponent
   },
   {
     path: 'presentation', component: PresentationComponent
