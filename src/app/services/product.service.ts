@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {environment} from '../../environments/environment';
+
 import {Observable} from 'rxjs';
 import {ProductModelServer} from '../models/product.model';
 
@@ -14,6 +14,7 @@ export class ProductService {
 
   constructor(private http: HttpClient) {
   }
+
   getAllProducts(numberOfResults) {
     return this.http.get(this.SERVER_URL + '/products', {
       params: {

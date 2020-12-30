@@ -22,6 +22,8 @@ import { IntroComponent } from './components/intro/intro.component';
 import { PresentationComponent } from './components/presentation/presentation.component';
 
 import {NgxParallaxScrollModule} from 'ngx-parallax-scroll';
+import { ContactComponent } from './components/contact/contact.component';
+import { CeuilletteComponent } from './components/ceuillette/ceuillette.component';
 
 
 const googleLoginOptions = {
@@ -55,6 +57,8 @@ export function providerConfig() {
     ProfileComponent,
     IntroComponent,
     PresentationComponent,
+    ContactComponent,
+    CeuilletteComponent,
   ],
   imports: [
     BrowserModule,
