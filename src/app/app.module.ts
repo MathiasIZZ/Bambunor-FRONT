@@ -22,7 +22,12 @@ import { IntroComponent } from './components/intro/intro.component';
 import { PresentationComponent } from './components/presentation/presentation.component';
 
 import {NgxParallaxScrollModule} from 'ngx-parallax-scroll';
+<<<<<<< HEAD
 import { CueilletteComponent } from './components/cueillette/cueillette.component';
+=======
+import { ContactComponent } from './components/contact/contact.component';
+import { CeuilletteComponent } from './components/ceuillette/ceuillette.component';
+>>>>>>> 1847213332dbc7fbc4b8624490fd7bcc45898aba
 
 
 const googleLoginOptions = {
@@ -56,7 +61,12 @@ export function providerConfig() {
     ProfileComponent,
     IntroComponent,
     PresentationComponent,
+<<<<<<< HEAD
     CueilletteComponent,
+=======
+    ContactComponent,
+    CeuilletteComponent,
+>>>>>>> 1847213332dbc7fbc4b8624490fd7bcc45898aba
   ],
   imports: [
     BrowserModule,
