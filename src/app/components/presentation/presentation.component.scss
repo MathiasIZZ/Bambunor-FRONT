@@ -29,7 +29,7 @@
 .right {
   display: flex;
   flex-direction: column;
-  width: 95%;
+  width: 70%;
   padding: 2.5rem !important;
   font-size: 25px !important;
   line-height: 1.5;
@@ -70,6 +70,15 @@
 
 .sub {
 
+}
+
+
+@media screen and (max-width: 1400px) {
+  .stade {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 
