@@ -20,11 +20,10 @@ import {FormsModule} from '@angular/forms';
 import {SocialLoginModule, GoogleLoginProvider, SocialAuthServiceConfig, SocialAuthService} from 'angularx-social-login';
 import { IntroComponent } from './components/intro/intro.component';
 import { PresentationComponent } from './components/presentation/presentation.component';
-
 import {NgxParallaxScrollModule} from 'ngx-parallax-scroll';
-import { CueilletteComponent } from './components/cueillette/cueillette.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { CeuilletteComponent } from './components/ceuillette/ceuillette.component';
+import { CueilletteComponent } from './components/cueillette/cueillette.component';
+
 
 
 
@@ -59,9 +58,8 @@ export function providerConfig() {
     ProfileComponent,
     IntroComponent,
     PresentationComponent,
-    CueilletteComponent,
     ContactComponent,
-    CeuilletteComponent,
+    CueilletteComponent,
   ],
   imports: [
     BrowserModule,

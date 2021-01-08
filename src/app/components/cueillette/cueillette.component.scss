@@ -1,0 +1,32 @@
+
+.backbambou img {
+  width: 100%;
+
+  position: absolute;
+  z-index: 0;
+}
+
+.arene {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  min-height: 150vh;
+  position: relative;
+  padding-top: 15% !important;
+}
+
+.left {
+  background: blue !important;
+  display: flex;
+  background: transparent;
+  width: 50%;
+  height: 350px;
+}
+
+.right {
+  background: red !important;
+  display: flex;
+  background: transparent;
+  width: 50%;
+  height: 350px;
+}
