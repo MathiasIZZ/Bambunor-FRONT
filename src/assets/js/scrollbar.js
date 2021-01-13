@@ -1,5 +1,5 @@
 
-
+/*
 const progressBar = document.querySelector('.scrollbar');
 
 let totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -14,3 +14,5 @@ window.addEventListener('scroll', () => {
 
 });
 
+
+*/

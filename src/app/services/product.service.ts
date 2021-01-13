@@ -16,7 +16,7 @@ export class ProductService {
   }
 
   getAllProducts(numberOfResults) {
-    return this.http.get(this.SERVER_URL + '/products', {
+    return this.http.get(this.SERVER_URL + '/products/home', {
       params: {
         limit: numberOfResults.toString()
       }

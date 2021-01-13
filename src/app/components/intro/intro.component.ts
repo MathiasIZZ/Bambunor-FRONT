@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { TimelineMax } from 'gsap';
+import { gsap, TimelineMax } from 'gsap';
+
+
+gsap.registerPlugin(TimelineMax);
+
 
 
 @Component({
