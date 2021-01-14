@@ -1,0 +1,109 @@
+
+
+@font-face {
+  font-family: dinpro;
+  src: url("../../../assets/fonts/DINPro-Regular.otf");
+}
+
+.texte {
+  color: black;
+  font-size: 10px;
+}
+
+.cosmos {
+  background-color: white;
+  margin-right: 20px;
+  margin-left: 20px;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin-bottom: 5px;
+
+}
+
+.news {
+
+  height: 100%;
+  padding-left: 2%;
+  padding-right: 2%;
+
+}
+
+.maClassInput {
+  height: 145px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.monInput {
+  height: 100%;
+  width: calc(100% - 165px);
+  padding-left: 2%;
+  outline: none;
+  text-transform: uppercase;
+  color: black;
+  font-size: 127px;
+  font-family: dinpro;
+}
+
+.monLabel{
+  position: absolute;
+  top: 7px;
+  line-height: 1;
+  letter-spacing: -5px;
+  font-size: 127px;
+  color: transparent;
+  font-family: dinpro;
+}
+
+#email-subscribe {
+  outline: none;
+  border: none;
+}
+
+button {
+  background: transparent;
+}
+
+.message {
+  font-weight: 700;
+  font-size: 115px;
+}
+
+.reseaux {
+  font-size: 14px;
+  background: #1E1F29;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.reseaux nav {
+  border-bottom: 1px solid rgba(255,255,255,.3);
+}
+
+.reseaux ul {
+  display: flex;
+  justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  flex-wrap: wrap;
+  padding: 30px 0;
+  list-style: none;
+}
+
+.reseaux li {
+  padding: 5px 20px;
+}
+
+.reseaux a {
+  color: #eee;
+  font-family: dinpro;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1.43;
+  letter-spacing: 1px;
+  font-size: 25px;
+}
+
+
