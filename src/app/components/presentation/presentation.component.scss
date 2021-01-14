@@ -12,7 +12,7 @@ html {
 
 .socle {
   display: flex;
-  margin-top: 50px;
+  /*margin-top: 50px;*/
 
 }
 .left {
@@ -68,6 +68,16 @@ html {
 
 }
 
+.subtitre {
+  text-align: center;
+  margin: auto;
+  padding-top: 5%;
+}
+
+.subtitre h1 {
+  font-size: 6rem !important;
+}
+
 .submain {
   /*margin: 0% 65% 0% -135%;*/
 }
@@ -77,12 +87,27 @@ html {
 }
 
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1435px) {
   .stade {
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
   }
+
+  .submain .zetitre {
+    font-size: 3.5rem;
+    -webkit-text-fill-color: rgb(141, 182, 66);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.2);
+    margin-right: -200px;
+    line-height: 2em;
+    -webkit-transform:scaleY(2);
+    -moz-transform:scaleY(2);
+    -o-transform:scaleY(2);
+
+  }
+
+
 }
 
 

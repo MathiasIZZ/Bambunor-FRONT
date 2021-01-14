@@ -118,15 +118,17 @@ video {
 
 .titre2 {
   text-align: left;
-  margin-left: 10%;
+  padding-left: 10% !important;
   width: 100%;
   max-width: 100%;
 }
 
 .titre2 h2 {
-  -webkit-text-fill-color: #493c26;
+
+  /* #493c26, #8db642 */
+  -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 4px;
-  -webkit-text-stroke-color: #8db642;
+  -webkit-text-stroke-color: #493c26;
   font-weight: 600;
   font-size: 8em;
   text-transform: uppercase;
@@ -136,28 +138,32 @@ video {
   position: absolute;
   bottom: 0;
   width: 100%;
+  text-align: center;
+}
+
+.monBouton2 {
+  width: 120px !important;
+  background-color: #8db642;
 }
 
 .mybtn {
   width: 100%;
 }
 
-  @media screen and (max-width: 1400px) {
+  @media screen and (max-width: 1435px) {
 
-    .cadre {
-      padding: 5% 0% 0% 10%;
-    }
+
 
     .titre2 h2 {
-      font-size: 5em;
+      font-size: 6em;
       font-weight: 600;
       text-transform: uppercase;
     }
 
     .titre1 h2 {
-      font-size: 4em;
+      font-size: 6em;
       font-weight: 600;
-      margin: 15% 0% 0% 0%;
+      /*margin: 15% 0% 0% 0%;*/
       text-transform: uppercase;
     }
 
