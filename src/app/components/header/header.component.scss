@@ -12,8 +12,23 @@
 
 
 .arene {
-  background-color: rgba(0, 0, 0, 0.6);
+  /*background-color: rgba(0, 0, 0, 0.6);*/
+  background-color: #2B2D42;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  transition-duration: 1s;
 }
+
+.disparition {
+  opacity: 0;
+  transition-duration: 1s;
+}
+
+
+
+
 
 
 
@@ -26,6 +41,13 @@
 a {
   font-family: dinpro;
 }
+
+
+#responsive-nav  {
+  display: none;
+}
+
+
 
 
 

@@ -37,8 +37,17 @@ export class HeaderComponent implements OnInit {
 
 
     $(window).scroll( function(): void {
-      $('nav').toggleClass('scrolled', $(this).scrollTop() > 80);
-      console.log('ok');
+      $('.arene').toggleClass('disparition', $(this).scrollTop() > 60);
+    });
+
+
+
+
+
+
+    $('.menu-toggle > a').on('click', (e) => {
+      e.preventDefault();
+      $('#responsive-nav').toggleClass('active');
     });
 
 
