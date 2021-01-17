@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import {CartModelServer} from '../../models/cart.model';
 import {CartService} from '../../services/cart.service';
 import {UserService} from '../../services/user.service';
+import * as $ from 'jquery';
+
+
 
 @Component({
   selector: 'app-header',
@@ -33,6 +36,11 @@ export class HeaderComponent implements OnInit {
     console.log(card.style.visibility);
 
 
+    $(window).scroll( function(): void {
+      $('nav').toggleClass('scrolled', $(this).scrollTop() > 80);
+      console.log('ok');
+    });
+
 
 
 
@@ -46,5 +54,12 @@ export class HeaderComponent implements OnInit {
     });
 
   }
+
+
+
+
+
+
+
 
 }

@@ -10,12 +10,17 @@
 }
 
 body {
-  background-color: #ffffde !important;
+  background-color: #FDF0D5 !important;
 }
 
 @font-face {
   font-family: dinpro;
   src: url("assets/fonts/DINPro-Black.otf");
+}
+
+@font-face {
+  font-family: dinproBold;
+  src: url("assets/fonts/DINPro-Bold.otf");
 }
 
 /*

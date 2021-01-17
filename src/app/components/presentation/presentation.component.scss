@@ -4,6 +4,10 @@
   font-family: dinpro;
   src: url("../../../assets/fonts/DINPro-Regular.otf");
 }
+@font-face {
+  font-family: dinproBold;
+  src: url("../../../assets/fonts/DINPro-Bold.otf");
+}
 
 html {
   font-family: dinpro;
@@ -116,7 +120,10 @@ html {
 
 
 
-
+.zeTitre {
+  color: #7B0D1E;
+  font-family: dinproBold;
+}
 
 
 

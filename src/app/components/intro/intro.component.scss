@@ -30,7 +30,7 @@ video {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  z-index: 400;
+  z-index: 10000;
   top: 0;
   overflow: hidden;
 }
@@ -158,6 +158,7 @@ video {
       font-size: 6em;
       font-weight: 600;
       text-transform: uppercase;
+
     }
 
     .titre1 h2 {
@@ -168,6 +169,30 @@ video {
     }
 
   }
+
+@media screen and (max-width: 400px) {
+
+  .cadre {
+    margin: 30% 0 0 10%;
+  }
+
+  .titre2 h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #493c26;
+  }
+
+  .titre1 h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    /*margin: 15% 0% 0% 0%;*/
+    text-transform: uppercase;
+  }
+
+}
 
 
 

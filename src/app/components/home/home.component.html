@@ -4,6 +4,23 @@
 <!-- container -->
 <div class="container">
 
+  <div class="stade">
+
+    <div class="socle">
+      <div class="left">
+      </div>
+      <div class="right">
+        <div class="submain">
+          <h1 class="zetitre fontperso">DU CHAMPS A L'ASSIETTE</h1>
+        </div>
+        <div class="sub">
+          <h3 class="fontperso"><span style="color: #493c26">Que vous soyez chef d'un restaurant gourmet ou simple  particulier, invitez ce met délicat à votre table !</span></h3>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
 
 
   <div class="row">
@@ -11,10 +28,10 @@
     <div class="col-md-4 col-xs-6">
       <div class="shop">
         <div class="shop-img">
-          <img src="assets/img/shop01.png" alt="">
+          <img src="assets/img/bambou-product.jpg" alt="">
         </div>
         <div class="shop-body">
-          <h3>Laptop<br>Collection</h3>
+          <h3>test<br>présentation</h3>
           <a href="#" class="cta-btn">Shop now <i class="fa fa-arrow-circle-right"></i></a>
         </div>
       </div>
@@ -25,10 +42,10 @@
     <div class="col-md-4 col-xs-6">
       <div class="shop">
         <div class="shop-img">
-          <img src="assets/img/shop03.png" alt="">
+          <img src="assets/img/bambou-product.jpg" alt="">
         </div>
         <div class="shop-body">
-          <h3>Accessories<br>Collection</h3>
+          <h3>test<br>présentation</h3>
           <a href="#" class="cta-btn">Shop now <i class="fa fa-arrow-circle-right"></i></a>
         </div>
       </div>
@@ -39,10 +56,10 @@
     <div class="col-md-4 col-xs-6">
       <div class="shop">
         <div class="shop-img">
-          <img src="assets/img/shop02.png" alt="">
+          <img src="assets/img/bambou-product.jpg" alt="">
         </div>
         <div class="shop-body">
-          <h3>Cameras<br>Collection</h3>
+          <h3>test<br>présentation</h3>
           <a href="#" class="cta-btn">Shop now <i class="fa fa-arrow-circle-right"></i></a>
         </div>
       </div>
@@ -50,9 +67,25 @@
     <!-- /shop -->
   </div>
 
+  <div class="stade">
+
+    <div class="socle" style="margin-top: 50px;">
+      <div class="right">
+        <h2 class="fontperso"><span style="color: #493c26">« BAMBUNOR LDA » : Une exploitation, innovante en Europe.</span><span>
+      En 2015, nous avons plantés, en agriculture biologique, 3 hectares de Bambous au Nord du Portugal, et avons crée BAMBUNOR LDA.</span></h2>
+        <p class="fontperso">Notre mission: Vous faire connaître un produit rare aux multiples vertus alimentaires : les pousses de bambous fraîches.</p>
+      </div>
+      <div class="left">
+        <img src="assets/img/bambou.jpg" alt="Un Âne">
+      </div>
+    </div>
 
 
-  <!-- row -->
+  </div>
+
+
+
+  <!-- row
   <div class="row">
     <div class="col-md-12">
       <div class="row">
@@ -85,38 +118,50 @@
         </div>
       </div>
     </div>
-
   </div>
 
+-->
 
 
-
-
+  <!-- row model hors connexion -->
   <div class="row">
     <div class="col-md-12">
-      <div class="newsletter">
-        <p>Sign Up for the <strong>NEWSLETTER</strong></p>
-        <form>
-          <input class="input" type="email" placeholder="Enter Your Email">
-          <button class="newsletter-btn"><i class="fa fa-envelope"></i> Subscribe</button>
-        </form>
-        <ul class="newsletter-follow">
-          <li>
-            <a href="#"><i class="fa fa-facebook"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa fa-instagram"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa fa-pinterest"></i></a>
-          </li>
-        </ul>
+      <div class="row" style="justify-content: center">
+
+        <div class="col-md-4 col-sm-6" >
+          <div class="card my-2">
+            <img src="assets/img/bambou-product.jpg" alt="bambou" class="card-img-top" width="200px" style="cursor: pointer;" >
+            <div class="card-header">
+              <div class="card-title">
+                <p>Pousses De Bambous</p>
+              </div>
+            </div>
+            <div class="card-body">
+              <p>- 40 euros / kg <br>- 30 euros à partir de 10 kg <br>- 20 euros à partir de 100 kg </p>
+              <p class="lead"></p>
+            </div>
+            <div class="row d-flex justify-content-center border-primary my-3">
+              <div class="col-md-6">
+
+                <button class="btn btn-outline-primary btn-sm btn-block"
+
+                        (click)="addToCart(2)"
+                >
+                  ajouter au panier
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+
+
+
+
+
+
 
 
 
