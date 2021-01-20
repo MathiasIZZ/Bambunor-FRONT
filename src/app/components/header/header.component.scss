@@ -12,18 +12,24 @@
 
 
 .arene {
-  /*background-color: rgba(0, 0, 0, 0.6);*/
-  background-color: #2B2D42;
+  top: 0px;
+  background-color: #121112;
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   transition-duration: 1s;
+  z-index: 10000;
 }
 
 .disparition {
-  opacity: 0;
+  top: -200px;
   transition-duration: 1s;
+}
+
+.fond {
+  background-color: white !important;
+  transition-duration: 1.5s;
 }
 
 

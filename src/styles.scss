@@ -9,9 +9,12 @@
   background: transparent;
 }
 
-body {
-  background-color: #FDF0D5 !important;
-}
+
+
+
+
+
+
 
 @font-face {
   font-family: dinpro;
@@ -57,12 +60,25 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 10000;
+  z-index: 1000000000;
+  top: 0;
 }
 
 .fondu-out {
   opacity: 0;
   transition: opacity 0.4s ease-out;
   display: none;
+}
+
+
+/* ZONE CSS DESIGN BACKGROUND SCROLL */
+
+nav {
+  background-color: red;
+}
+
+
+body {
+  background-color: #121112 ;
 }
 

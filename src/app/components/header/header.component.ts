@@ -6,6 +6,8 @@ import * as $ from 'jquery';
 
 
 
+
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -33,15 +35,42 @@ export class HeaderComponent implements OnInit {
 
     const card = document.getElementById('droppy');
 
-    console.log(card.style.visibility);
+
+    let lastScrollTop = 0;
+/*
+    $(window).scroll( function(event){
+      const st = $(this).scrollTop();
+      if (st > lastScrollTop){
+        $('.arene').toggleClass('disparition', $(this).scrollTop() > 60);
+      } else {
+        $('.arene').removeClass('disparition', $(this).scrollTop() > 60);
+      }
+      lastScrollTop = st;
+    });*/
 
 
-    $(window).scroll( function(): void {
-      $('.arene').toggleClass('disparition', $(this).scrollTop() > 60);
+
+    $(window).scroll( function (event){
+      const st = $(this).scrollTop();
+      if (st > lastScrollTop) {
+        $('.arene').toggleClass('disparition', $(this).scrollTop() > 60);
+      }
+      else {
+        $('.arene').removeClass('disparition', $(this).scrollTop() > 60);
+      }
+      lastScrollTop = st;
     });
 
 
+/*
+    $(window).scroll( function(event) {
 
+      $('.arene').toggleClass('disparition', $(this).scrollTop() > 60);
+      $('.arene').toggleClass('fond', $(this).scrollTop() > 600);
+
+    });
+
+*/
 
 
 
