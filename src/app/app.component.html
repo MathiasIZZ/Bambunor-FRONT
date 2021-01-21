@@ -1,10 +1,13 @@
 
-  <app-header></app-header>
+<app-header></app-header>
 
+<div class="chargement">
+  <div [@routeAnimations]="prepareRoute(outlet)" class="espace">
+    <router-outlet #outlet="outlet"></router-outlet>
 
-<div class="espace">
-  <router-outlet></router-outlet>
+  </div>
 </div>
 
 
 <app-footer></app-footer>
+

@@ -12,6 +12,7 @@ import {IntroComponent} from './components/intro/intro.component';
 import {PresentationComponent} from './components/presentation/presentation.component';
 import {ContactComponent} from './components/contact/contact.component';
 import {CueilletteComponent} from './components/cueillette/cueillette.component';
+import {HistoireComponent} from './components/histoire/histoire.component';
 
 
 const routes: Routes = [
@@ -19,16 +20,19 @@ const routes: Routes = [
     path: '', component: IntroComponent
   },
   {
-    path: 'contact', component: ContactComponent
+    path: 'contact', component: ContactComponent, data: { animation: 'isContact'}
   },
   {
-    path: 'cueillette', component: CueilletteComponent
+    path: 'cueillette', component: CueilletteComponent, data: { animation: 'isCueillette' }
   },
   {
-    path: 'presentation', component: PresentationComponent
+    path: 'histoire', component: HistoireComponent, data: { animation: 'isHistoire' }
   },
   {
-    path: 'home', component: HomeComponent
+    path: 'presentation', component: PresentationComponent, data: { animation: 'isPresentation' }
+  },
+  {
+    path: 'home', component: HomeComponent, data: { animation: 'isHome' }
   },
   {
     path: 'product/:id', component: ProductComponent
@@ -46,7 +50,7 @@ const routes: Routes = [
     path: 'login', component: LoginComponent
   },
   {
-    path: 'profile', component: ProfileComponent, canActivate:[ProfilGuard]
+    path: 'profile', component: ProfileComponent, canActivate: [ProfilGuard]
   }
 ];
 

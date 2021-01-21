@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -23,6 +25,8 @@ import { PresentationComponent } from './components/presentation/presentation.co
 import {NgxParallaxScrollModule} from 'ngx-parallax-scroll';
 import { ContactComponent } from './components/contact/contact.component';
 import { CueilletteComponent } from './components/cueillette/cueillette.component';
+import { HistoireComponent } from './components/histoire/histoire.component';
+import { NewsletterComponent } from './components/newsletter/newsletter.component';
 
 
 
@@ -60,6 +64,8 @@ export function providerConfig() {
     PresentationComponent,
     ContactComponent,
     CueilletteComponent,
+    HistoireComponent,
+    NewsletterComponent,
   ],
   imports: [
     BrowserModule,
@@ -70,7 +76,7 @@ export function providerConfig() {
     ToastrModule.forRoot(),
     FormsModule,
     SocialLoginModule,
-    NgxParallaxScrollModule
+    NgxParallaxScrollModule,
   ],
   providers: [
     {
