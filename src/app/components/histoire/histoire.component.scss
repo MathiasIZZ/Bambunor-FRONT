@@ -1,0 +1,125 @@
+section {
+  margin-bottom: 75px;
+  user-select: none;
+}
+
+.galaxy {
+  min-height: 100vh;
+  height: 100%;
+}
+
+
+.cosmos {
+  margin-top: 250px;
+
+}
+
+
+.satellite {
+  position: absolute;
+  top: 250px;
+  right: 50px;
+  transform-origin: right top;
+  transform: rotate(90deg) translate(100%, 0);
+  text-transform: uppercase;
+}
+
+.strat {
+  position: relative;
+}
+
+.strat h1 {
+  margin-left: 50px;
+  font-family: dinproBold;
+  font-size: 10.5vw;
+  line-height: 120%;
+}
+
+.plante {
+  margin-top: 185px;
+  height: auto;
+}
+
+#plante2 {
+  margin-top: 100px;
+}
+.espace {
+  width: 1150px;
+  margin: 0 auto;
+}
+
+.espaceleft {
+  min-height: 1px;
+  width: 33.33%;
+  float: left;
+}
+
+.espaceright {
+  float: left;
+  width: 66.66%;
+}
+
+.espaceright h2 {
+  text-transform: none;
+  font-size: 30px;
+  line-height: 150%;
+  font-family: dinproBold;
+}
+
+.bloc {
+  width: 50%;
+  display: inline-block;
+  margin-bottom: 70px;
+  vertical-align: top;
+  line-height: 26px;
+}
+
+.blocalone {
+  width: 75%;
+}
+
+.bloc {
+  font-size: 17px;
+}
+
+.clear{
+  clear: left;
+}
+
+.visu {
+  position: relative;
+}
+.img {
+  display: block;
+  padding-left: 399px;
+}
+.img img {
+  display: block;
+  width: 100%;
+
+  overflow: hidden;
+}
+
+.texte1 {
+  position: absolute;
+  top: 150px;
+  left: 50px;
+}
+
+.texte1 h2 {
+  font-size: 30px;
+  font-family: dinproBold;
+  margin-bottom: 70px;
+}
+
+.texte1 p {
+  color: wheat;
+  font-family: dinpro;
+}
+
+
+
+
+
+
+
