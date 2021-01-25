@@ -6,13 +6,11 @@ section {
 .galaxy {
   min-height: 100vh;
   height: 100%;
-}
-
-
-.cosmos {
   margin-top: 250px;
-
 }
+
+
+
 
 
 .satellite {
@@ -115,6 +113,13 @@ section {
 .texte1 p {
   color: wheat;
   font-family: dinpro;
+}
+
+.partie {
+  width: 33.33%;
+  display: inline-block;
+  border-right: 1px solid #e4e4e5;
+  padding: 2%;
 }
 
 
