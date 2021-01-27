@@ -37,16 +37,7 @@ export class HeaderComponent implements OnInit {
 
 
     let lastScrollTop = 0;
-/*
-    $(window).scroll( function(event){
-      const st = $(this).scrollTop();
-      if (st > lastScrollTop){
-        $('.arene').toggleClass('disparition', $(this).scrollTop() > 60);
-      } else {
-        $('.arene').removeClass('disparition', $(this).scrollTop() > 60);
-      }
-      lastScrollTop = st;
-    });*/
+
 
 
 

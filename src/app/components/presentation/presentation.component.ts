@@ -48,7 +48,7 @@ export class PresentationComponent implements OnInit {
   // tslint:disable-next-line:typedef
   createAnim() {
     const titre = document.querySelectorAll('.anime');
-    this.TL.from(titre[0], 3, {y: -100, opacity: 0});
+    this.TL.from(titre[0], 5, {y: -100, opacity: 0});
     this.TL.play();
   }
 

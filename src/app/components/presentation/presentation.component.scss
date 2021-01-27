@@ -13,9 +13,18 @@ html {
   font-family: dinpro;
 }
 
+.satellite {
+  position: absolute;
+  top: 250px;
+  right: 50px;
+  transform-origin: right top;
+  transform: rotate(90deg) translate(100%, 0);
+  text-transform: uppercase;
+}
 
 .socle {
   display: flex;
+  margin-top: 185px;
   /*margin-top: 50px;*/
 
 }
@@ -57,6 +66,10 @@ html {
   width: 1350px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.center {
+  text-align: center;
 }
 
 .submain .zetitre {
@@ -115,16 +128,22 @@ html {
 }
 
 
-
-
-
-
-
 .zeTitre {
   color: #7B0D1E;
   font-family: dinproBold;
 }
 
+.strat {
+  position: relative;
+  margin-bottom: 150px;
+}
+
+.strat h1 {
+  margin-left: 50px;
+  font-family: dinproBold;
+  font-size: 10.5vw;
+  line-height: 120%;
+}
 
 
 

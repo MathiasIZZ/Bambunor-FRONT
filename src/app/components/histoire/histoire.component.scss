@@ -10,9 +10,6 @@ section {
 }
 
 
-
-
-
 .satellite {
   position: absolute;
   top: 250px;
@@ -42,7 +39,7 @@ section {
   margin-top: 100px;
 }
 .espace {
-  width: 1150px;
+  max-width: 1250px;
   margin: 0 auto;
 }
 
@@ -122,6 +119,51 @@ section {
   padding: 2%;
 }
 
+.tween {
+
+}
+
+.tween1 {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.tween2 {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 75px;
+
+}
+
+.haut {
+  width: 100%;
+  align-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.bas {
+  width: 100%;
+  align-content: center;
+  display: flex;
+  align-items: center;
+  padding: 10%;
+  text-align: justify;
+}
+
+
+.haut img {
+  width: 100%;
+}
+
+.bas p {
+  font-size: 1.5rem;
+}
+
+h3 {
+  color: #121112;
+}
 
 
 

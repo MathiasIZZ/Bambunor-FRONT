@@ -13,7 +13,7 @@
 
 .arene {
   top: 0px;
-  background-color: #121112;
+  background-color: #1E1F29;
   position: fixed;
   top: 0;
   left: 0;
@@ -32,25 +32,67 @@
   transition-duration: 1.5s;
 }
 
-
-
-
-
-
-
-
 .arene .scrolled {
   background: black !important;
-
 }
 
 a {
   font-family: dinpro;
 }
 
-
 #responsive-nav  {
   display: none;
+}
+
+
+/*----------------------------*\
+	Logo
+\*----------------------------*/
+
+#header {
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+}
+
+.header-logo {
+  background-color: #1E1F29;
+  position: relative;
+  height: 100px;
+}
+
+.blaze {
+  color: #ffeecf;
+  -webkit-transform: scaleY(2);
+  -moz-transform: scaleY(2);
+  -o-transform: scaleY(2);
+  font-family: dinproBold;
+  font-size: 3.2rem;
+  letter-spacing: 0.8rem;
+  text-align: center;
+}
+.sousblaze {
+  color: #ffeecf;
+  position: absolute;
+  right: 15px;
+  bottom: -5px;
+  font-family: dinproBold;
+}
+
+.header-logo:hover {
+  .sousblaze{
+    animation: bounce 0.35s ease infinite alternate;
+  }
+}
+
+@keyframes bounce{
+  from {transform: translateX(0);}
+  to   {transform: translateX(-250px);}
+}
+
+
+.header-logo .logo img {
+  display: block;
 }
 
 

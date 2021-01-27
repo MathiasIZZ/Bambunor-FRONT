@@ -27,14 +27,12 @@ export class IntroComponent implements OnInit {
 
 
   createAnim() {
-
     const titre = document.querySelectorAll('h2');
     this.TL.from(titre[0], 1, {y: -100, opacity: 0}).from(titre[1], 2, {y: -100, opacity: 0});
     this.TL.play();
   }
 
   anim1() {
-
     gsap.to('.monBouton2', {
       duration: 3,
       scale: 1,
