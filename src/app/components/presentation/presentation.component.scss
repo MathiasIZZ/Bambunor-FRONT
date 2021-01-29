@@ -24,7 +24,7 @@ html {
 
 .socle {
   display: flex;
-  margin-top: 185px;
+  margin-top: 50px;
   /*margin-top: 50px;*/
 
 }
@@ -106,7 +106,7 @@ html {
 
 @media screen and (max-width: 1435px) {
   .stade {
-    width: 1200px;
+    width: calc(100% - 75px);
     margin-left: auto;
     margin-right: auto;
   }
@@ -137,71 +137,9 @@ html {
   position: relative;
   margin-bottom: 150px;
 }
-
 .strat h1 {
   margin-left: 50px;
   font-family: dinproBold;
   font-size: 10.5vw;
   line-height: 120%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.galaxy__parallax {
-  position: absolute;
-}
-
-.galaxy__parallax--figure {
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.galaxy__generate {
-  position: fixed;
-  background-color: #fff;
-  border: 1px solid #fff;
-  color: #333;
-  font-size: 16px;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 50px;
-  margin: 10px;
-  transition: background-color 0.2s, color 0.15s;
-  outline: none;
-}
-
-.galaxy__generate:hover {
-  background-color: #ff695d;
-  border-color: transparent;
-  color: #fff;
 }
