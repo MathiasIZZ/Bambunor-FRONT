@@ -21,7 +21,7 @@ export class CueilletteComponent implements OnInit {
 
       ScrollTrigger.create({
         trigger: 'h1',
-        start: 'top 30%',
+        start: 'top 20%',
         onEnter: () => {
           gsap.to('body', {backgroundColor: '#ffeecf'});
           gsap.to('h1', {color: '#121112'});
