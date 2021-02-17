@@ -3,16 +3,27 @@ section {
   user-select: none;
 }
 
+.carreblue {
+  background-color: #314d91;
+  margin-top: -100px;
+  margin-right: -80px;
+}
+
+.icone {
+  width:120px;
+  margin-bottom: 50px;
+}
+
 .galaxy {
-  min-height: 100vh;
+  min-height: 80vh;
   height: 100%;
   margin-top: 250px;
 }
 
 
 .satellite {
-  position: absolute;
-  top: 250px;
+  position: fixed;
+  top: 350px;
   right: 50px;
   transform-origin: right top;
   transform: rotate(90deg) translate(100%, 0);
@@ -31,7 +42,7 @@ section {
 }
 
 .plante {
-  margin-top: 185px;
+  //margin-top: 185px;
   height: auto;
 }
 
@@ -45,13 +56,13 @@ section {
 
 .espaceleft {
   min-height: 1px;
-  width: 33.33%;
+  width: 15%;
   float: left;
 }
 
 .espaceright {
   float: left;
-  width: 66.66%;
+  width: 80%;
 }
 
 .espaceright h2 {
