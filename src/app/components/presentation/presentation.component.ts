@@ -29,14 +29,14 @@ export class PresentationComponent implements OnInit {
         trigger: 'h1',
         start: 'top 20%',
         onEnter: () => {
-          gsap.to('body', {backgroundColor: 'white'});
-          gsap.to('h1', {color: '#121112'});
-          gsap.to('h2', {color: '#121112'});
+          gsap.to('body', {backgroundColor: '#ffffff'});
+          gsap.to('h1', {color: '#1f2833'});
+          gsap.to('h2', {color: '#1f2833'});
         },
         onLeaveBack: () => {
-          gsap.to('body', {backgroundColor: '#121112'});
-          gsap.to('h1', {color: '#ffeecf'}); // #ffeecf
-          gsap.to('h2', {color: '#ffeecf'});
+          gsap.to('body', {backgroundColor: '#1f2833'});
+          gsap.to('h1', {color: '#ffffff'}); // #ffeecf
+          gsap.to('h2', {color: '#ffffff'});
         },
         markers: true
       });

@@ -5,120 +5,73 @@
   src: url("../../../assets/fonts/DINPro-Regular.otf");
 }
 
-.texte {
-  color: black;
-  font-size: 10px;
+.subscribe-main {
+  margin: 15px;
+  width: 100%;
 }
 
-.cosmos {
-  background-color: white;
-  margin-right: 20px;
-  margin-left: 20px;
-  border-radius: 10px;
-  border: 1px solid black;
-  margin-bottom: 5px;
+.subscribe {
+  display: flex;
+  flex-width: wrap;
+  align-items: center;
 
 }
 
-.news {
-
-  height: 100%;
-  padding-left: 2%;
-  padding-right: 2%;
-
+h3{
+  font-size: 46px;
+  line-height: 1.1;
+  min-width: 240px;
+  max-width: 700px;
+  margin: 0;
+  padding: 5%;
+  flex: 1 1 25%;
 }
 
-.maClassInput {
-  height: 145px;
+
+
+.newsletter-form {
   position: relative;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 100px;
+  background-color: #ededf1;
 }
 
-.monInput {
-  height: 100%;
-  width: calc(100% - 165px);
-  padding-left: 2%;
-  outline: none;
-  text-transform: uppercase;
-  color: black;
-  font-size: 127px;
-  font-family: dinpro;
-}
-
-.monLabel{
-  position: absolute;
-  top: 7px;
-  line-height: 1;
-  letter-spacing: -5px;
-  font-size: 127px;
-  color: transparent;
-  font-family: dinpro;
-}
-
-#email-subscribe {
-  outline: none;
-  border: none;
-}
-
-button {
-  background: transparent;
-}
-
-.message {
-  font-weight: 700;
-  font-size: 115px;
-}
-
-.reseaux {
-  font-size: 14px;
-  background: #1E1F29;
-  padding-left: 20px;
+.newsletter-input{
+  font-size: 20px;
+  display: block;
+  width: 180px;
+  margin-right: 12px;
   padding-right: 20px;
-}
-
-.reseaux nav {
-  border-bottom: 1px solid rgba(255,255,255,.3);
-}
-
-.reseaux ul {
-  display: flex;
-  justify-content: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  flex-wrap: wrap;
-  padding: 30px 0;
-  list-style: none;
-}
-
-.reseaux li {
-  padding: 5px 20px;
-}
-
-.reseaux a {
-  color: #eee;
-  font-family: dinpro;
-  text-transform: uppercase;
-  font-weight: 600;
-  line-height: 1.43;
-  letter-spacing: 1px;
-  font-size: 25px;
-}
-
-#bottom-footer {
-  background-color: #121112;
-}
-
-#footer {
-  min-height: 100vh;
-  background-image: url('../../../assets/img/footer.jpg');
-  background-repeat:no-repeat;
-  background-size: cover;
-  background-position: top;
+  padding-left: 30px;
+  transition: width .3s ease .2s;
+  word-break: normal;
+  border-radius: 100px;
+  flex: 1 1 auto;
 }
 
 
+.subscribe-button {
+  font-size: 20px;
+  font-weight: var(--font-weight-one-black);
+  line-height: 1.5;
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  padding: 22px 26px;
+  cursor: pointer;
+  text-align: center;
+  color: white !important;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+}
+
+.subscribe-button::after {
+  z-index: -2;
+  background-color: blue;
+}
 
 
 
