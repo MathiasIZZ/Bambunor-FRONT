@@ -78,16 +78,15 @@ a {
   bottom: -5px;
   font-family: dinproBold;
 }
-
 .header-logo:hover {
   .sousblaze{
-    animation: bounce 0.35s ease infinite alternate;
+    animation: linear 2s infinite alternate slidein;
   }
 }
 
-@keyframes bounce{
+@keyframes slidein{
   from {transform: translateX(0);}
-  to   {transform: translateX(-250px);}
+  to   {transform: translateX(-300px);}
 }
 
 

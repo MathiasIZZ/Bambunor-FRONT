@@ -40,7 +40,7 @@ export class HeaderComponent implements OnInit {
 
 
 
-
+/*
     $(window).scroll( function (event){
       const st = $(this).scrollTop();
       if (st > lastScrollTop) {
@@ -51,7 +51,7 @@ export class HeaderComponent implements OnInit {
       }
       lastScrollTop = st;
     });
-
+*/
 
 /*
     $(window).scroll( function(event) {
@@ -62,8 +62,6 @@ export class HeaderComponent implements OnInit {
     });
 
 */
-
-
 
     $('.menu-toggle > a').on('click', (e) => {
       e.preventDefault();

@@ -12,7 +12,7 @@
 
 .subscribe {
   display: flex;
-  flex-width: wrap;
+  flex-wrap: wrap;
   align-items: center;
 
 }
@@ -49,6 +49,11 @@ h3{
   word-break: normal;
   border-radius: 100px;
   flex: 1 1 auto;
+  border: 0;
+}
+
+.newsletter-input:focus {
+  width: 230px;
 }
 
 
@@ -65,15 +70,72 @@ h3{
   color: white !important;
   border: 0;
   outline: 0;
-  background-color: transparent;
-}
-
-.subscribe-button::after {
-  z-index: -2;
   background-color: blue;
+  border-radius: 100px;
 }
 
 
 
+.subscribe h3 {
+  font-size: 46px;
+  line-height: 1.1;
+  flex: 1 1 25%;
+  box-sizing: border-box;
+  min-width: 240px;
+  max-width: 700px;
+  margin: 0;
+  padding: 25px 5% 25px 0;
+  color: #2b394e;
+}
 
+.footer-icons svg {
+  width: 24px;
+  height: 24px;
+  transition: fill .15s ease;
+  fill: #2b394e;
+}
+
+.footer-icons {
+  margin-top: 4vh;
+  margin-bottom: 30px;
+}
+
+.footer-icons a {
+  line-height: 1;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0 7px 7px 0;
+  padding: 0;
+}
+
+.footer-wrap {
+  position: relative;
+  display: flex;
+  margin: 0 20px;
+  padding: 60px 0 0;
+}
+
+.footer-data {
+  flex: 999 0 30%;
+  box-sizing: border-box;
+  padding-right: 5%;
+}
+
+.footer-logo {
+  margin-bottom: 2vh;
+  max-width: 350px;
+}
+
+.footer-description {
+  font-size: 16px;
+  line-height: 1.4;
+  max-width: 300px;
+  margin: 0 0 4vh;
+}
+
+.footer-copyright {
+  font-size: 12px;
+  margin: 3vh 20px;
+}
 
