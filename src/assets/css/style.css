@@ -523,7 +523,7 @@ textarea.input {
 }
 
 .header-ctn .menu-toggle {
-  display: none;
+  display: inline-block;
 }
 
 
@@ -650,10 +650,10 @@ textarea.input {
     top: 0;
     background: #15161D;
     height: 100vh;
-    max-width: 250px;
+    /*max-width: 250px;*/
     width: 0%;
     overflow: hidden;
-    z-index: 22;
+    z-index: 22222222222222222222222222222;
     padding-top: 60px;
     -webkit-transform: translateX(-100%);
     -ms-transform: translateX(-100%);
