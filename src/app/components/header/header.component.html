@@ -24,15 +24,6 @@
 
           </div>
 
-          <div class="col-md">
-            <div class="header-logo">
-              <a routerLink="/" class="logo">
-                <div class="blaze">Bambunor</div>
-                <div class="sousblaze">LDA</div>
-              </a>
-            </div>
-          </div>
-
           <div  class="col-md clearfix">
             <div class="header-ctn">
               <div id="dropdown" class="dropdown">
@@ -68,8 +59,8 @@
               <!-- /Cart -->
 
               <!-- Menu Toogle -->
-              <div class="menu-toggle">
-                <a href="#">
+              <div class="menu-toggle" id="active-nav">
+                <a>
                   <i class="fa fa-bars"></i>
                   <span>Menu</span>
                 </a>
@@ -87,31 +78,37 @@
   </header>
   <!-- /HEADER -->
 
-
-
-
-
-
   <!-- NAVIGATION -->
-  <nav id="navigation">
-    <!-- container -->
-    <div class="container">
-      <!-- responsive-nav -->
-      <div id="responsive-nav py-3">
-        <!-- NAV -->
-        <ul class="main-nav nav">
-          <li><a routerLink="/presentation">QUI SOMMES NOUS ?</a></li>
-          <li><a routerLink="/histoire">DU CHAMPS A L'ASSIETTE</a></li>
-          <li><a routerLink="/home">COMMANDER</a></li>
-          <li><a routerLink="/cueillette">CUEILLETTE A LA FERME</a></li>
-          <li><a routerLink="/contact">NOUS CONTACTER</a></li>
 
-        </ul>
-        <!-- /NAV -->
-      </div>
-      <!-- /responsive-nav -->
-    </div>
-    <!-- /container -->
-  </nav>
 <!-- /NAVIGATION -->
 </div>
+<nav id="navigation" class="custom">
+  <!-- container -->
+  <div class="container">
+    <!-- responsive-nav -->
+    <div class="col-md">
+      <div class="header-logo">
+        <a routerLink="/" class="logo">
+          <div class="blaze">Bambunor</div>
+          <div class="sousblaze">LDA</div>
+        </a>
+      </div>
+    </div>
+    <div id="responsive-nav py-3">
+
+      <!-- NAV -->
+      <ul class="main-nav nav">
+        <li><a routerLink="/presentation">QUI SOMMES NOUS ?</a></li>
+        <li><a routerLink="/histoire">DU CHAMPS A L'ASSIETTE</a></li>
+        <li><a routerLink="/home">COMMANDER</a></li>
+        <li><a routerLink="/cueillette">CUEILLETTE A LA FERME</a></li>
+        <li><a routerLink="/contact">NOUS CONTACTER</a></li>
+        <li id="close">close</li>
+
+      </ul>
+      <!-- /NAV -->
+    </div>
+    <!-- /responsive-nav -->
+  </div>
+  <!-- /container -->
+</nav>

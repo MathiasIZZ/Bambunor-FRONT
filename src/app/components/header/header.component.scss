@@ -10,10 +10,15 @@
   opacity: 1;
 }
 
+.nav {
+  flex-direction: column;
+  text-align: center;
+}
+
 
 .arene {
   top: 0px;
-  background-color: #1E1F29;
+  background-color: transparent;
   position: fixed;
   top: 0;
   left: 0;
@@ -55,7 +60,7 @@ a {
 }
 
 .header-logo {
-  background-color: #1E1F29;
+  background-color: transparent;
   position: relative;
   height: 100px;
 }

@@ -62,14 +62,23 @@ export class HeaderComponent implements OnInit {
     });
 
 */
+    const activation = document.getElementById('active-nav');
 
-    $('.menu-toggle > a').on('click', (e) => {
-      e.preventDefault();
-      $('#responsive-nav').toggleClass('active');
+    activation.addEventListener('click', () => {
+      const nav = document.getElementById('navigation');
+      if (nav.style.display === 'none') {
+        nav.style.display = 'block';
+      } else {
+        nav.style.display = 'none';
+      }
     });
 
+    const fermeture = document.getElementById('close');
 
-
+    fermeture.addEventListener('click', () => {
+      const nav = document.getElementById('navigation');
+      nav.style.display = 'none';
+    });
 
     cart.addEventListener('click', () => {
       if (card.style.visibility === 'visible') {
