@@ -27,7 +27,7 @@ export class PresentationComponent implements OnInit {
 
       ScrollTrigger.create({
         trigger: 'h1',
-        start: 'top 20%',
+        start: 'top 10%',
         onEnter: () => {
           gsap.to('body', {backgroundColor: '#ffffff'});
           gsap.to('h1', {color: '#1f2833'});
