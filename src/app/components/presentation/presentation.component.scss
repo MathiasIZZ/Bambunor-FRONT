@@ -19,7 +19,7 @@ html {
 }
 
 .satellite {
-  position: absolute;
+  position: fixed;
   top: 250px;
   right: 50px;
   transform-origin: right top;
@@ -102,8 +102,24 @@ html {
 }
 
 .ferme {
-  border-radius: 100px;
+
+  transition: 0.2s all;
+  -webkit-transition: 0.2s all;
+  width: 100%;
 }
+
+.ferme:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(2);
+}
+
+.col-ferme {
+  overflow: hidden;
+  padding: 0;
+}
+
+
 
 
 
