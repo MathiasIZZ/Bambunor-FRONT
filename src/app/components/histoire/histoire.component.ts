@@ -22,16 +22,16 @@ export class HistoireComponent implements OnInit {
         trigger: 'h1',
         start: 'top 20%',
         onEnter: () => {
-          gsap.to('body', {backgroundColor: '#ffeecf'});
-          gsap.to('h1', {color: '#1E1F29'});
-          gsap.to('h2', {color: '#1E1F29'});
-          gsap.to('p', {color: '#1E1F29'});
+          gsap.to('body', {backgroundColor: '#D8DAD3'});
+          gsap.to('h1', {color: '#1f2833'});
+          gsap.to('h2', {color: '#1f2833'});
+          gsap.to('p', {color: '#1f2833'});
         },
         onLeaveBack: () => {
-          gsap.to('body', {backgroundColor: '#1E1F29'});
-          gsap.to('h1', {color: '#ffeecf'});
-          gsap.to('h2', {color: '#ffeecf'});
-          gsap.to('p', {color: '#ffeecf'});
+          gsap.to('body', {backgroundColor: '#1f2833'});
+          gsap.to('h1', {color: '#D8DAD3'});
+          gsap.to('h2', {color: '#D8DAD3'});
+          gsap.to('p', {color: '#D8DAD3'});
         },
         markers: true
       });

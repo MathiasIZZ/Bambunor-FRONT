@@ -15,9 +15,12 @@ section {
 }
 
 .galaxy {
-  min-height: 80vh;
   height: 100%;
   margin-top: 250px;
+}
+
+.para {
+  text-align: justify;
 }
 
 
@@ -61,8 +64,7 @@ section {
 }
 
 .espaceright {
-  float: left;
-  width: 80%;
+
 }
 
 .espaceright h2 {
@@ -72,21 +74,11 @@ section {
   font-family: dinproBold;
 }
 
-.bloc {
-  width: 50%;
-  display: inline-block;
-  margin-bottom: 70px;
-  vertical-align: top;
-  line-height: 26px;
-}
 
-.blocalone {
-  width: 75%;
-}
 
-.bloc {
-  font-size: 17px;
-}
+
+
+
 
 .clear{
   clear: left;
@@ -175,6 +167,32 @@ section {
 h3 {
   color: #121112;
 }
+
+#section-3 {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../assets/img/cueillette-foret.jpg) no-repeat center;
+  background-attachment: scroll, scroll;
+  background-size: auto, auto;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 300px 0;
+  text-align: center;
+  height: 30vh;
+  border-radius: 50px;
+  overflow: hidden;
+  margin: 150px;
+}
+
+.bg-plante {
+  background-color: #1f2833;
+  border-radius: 50px;
+}
+
+.bloc {
+  font-size: 18px;
+  font-weight: 800;
+  color: #f7f9f9 !important;
+}
+
 
 
 
