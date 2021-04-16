@@ -3,11 +3,19 @@
   height: 100vh;
   max-height: 100vh;
   width: 100%;
-  margin-top: 181px;
+  margin-top: 50px;
+  padding: 0;
+}
+
+.custom-image {
+  vertical-align: text-top;
+  border-style: none;
+  width: 100%;
+  height: 100vh;
 }
 
 .custom-left{
-  width: 35%;
+  width: 50%;
   overflow: hidden;
 }
 

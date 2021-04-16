@@ -66,18 +66,24 @@ export class HeaderComponent implements OnInit {
 
     activation.addEventListener('click', () => {
       const nav = document.getElementById('navigation');
+      const chargement = document.getElementById('chargement2');
       if (nav.style.display === 'none') {
         nav.style.display = 'block';
+        chargement.style.display = 'none';
       } else {
         nav.style.display = 'none';
+        chargement.style.display = 'block';
       }
     });
 
     const fermeture = document.getElementById('close');
 
+
     fermeture.addEventListener('click', () => {
       const nav = document.getElementById('navigation');
+      const chargement = document.getElementById('chargement2');
       nav.style.display = 'none';
+      chargement.style.display = 'block';
     });
 
     cart.addEventListener('click', () => {

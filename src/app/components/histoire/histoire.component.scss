@@ -10,13 +10,13 @@ section {
 }
 
 .icone {
-  width:120px;
+  width: 200px;
   margin-bottom: 50px;
 }
 
 .galaxy {
   height: 100%;
-  margin-top: 250px;
+  margin-top: 100px;
 }
 
 .para {
@@ -63,9 +63,7 @@ section {
   float: left;
 }
 
-.espaceright {
 
-}
 
 .espaceright h2 {
   text-transform: none;
@@ -73,11 +71,6 @@ section {
   line-height: 150%;
   font-family: dinproBold;
 }
-
-
-
-
-
 
 
 .clear{
@@ -173,14 +166,19 @@ h3 {
   background-attachment: scroll, scroll;
   background-size: auto, auto;
   background-size: cover;
-  background-attachment: fixed;
-  padding: 300px 0;
   text-align: center;
-  height: 30vh;
+  height: auto;
   border-radius: 50px;
   overflow: hidden;
   margin: 150px;
 }
+.ciel {
+  display: flex;
+  flex-direction: column;
+  padding: 5vh;
+  align-items: center
+}
+
 
 .bg-plante {
   background-color: #1f2833;
@@ -190,7 +188,7 @@ h3 {
 .bloc {
   font-size: 18px;
   font-weight: 800;
-  color: #f7f9f9 !important;
+  color: #121112 !important;
 }
 
 
