@@ -1,4 +1,5 @@
 import { animate, style, trigger, transition } from '@angular/animations';
+
 export const animations = [
   trigger('stars', [
     transition(':enter', [

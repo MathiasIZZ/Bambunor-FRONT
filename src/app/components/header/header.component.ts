@@ -3,6 +3,7 @@ import {CartModelServer} from '../../models/cart.model';
 import {CartService} from '../../services/cart.service';
 import {UserService} from '../../services/user.service';
 import * as $ from 'jquery';
+import {gsap} from "gsap";
 
 
 
@@ -80,11 +81,17 @@ export class HeaderComponent implements OnInit {
 
 
     fermeture.addEventListener('click', () => {
+
       const nav = document.getElementById('navigation');
+
       const chargement = document.getElementById('chargement2');
+
       nav.style.display = 'none';
       chargement.style.display = 'block';
+
     });
+
+
 
     cart.addEventListener('click', () => {
       if (card.style.visibility === 'visible') {
@@ -95,13 +102,19 @@ export class HeaderComponent implements OnInit {
       }
     });
 
+    gsap.utils.toArray('.c-usp').forEach(elem => {
+      gsap.from(document.querySelectorAll('h2'), {
+        scrollTrigger: elem,
+        autoAlpha: 1,
+        y: 25,
+        duration: 0.7,
+        stagger: 0.25
+      });
+    });
+
+
+
+
   }
-
-
-
-
-
-
-
 
 }
