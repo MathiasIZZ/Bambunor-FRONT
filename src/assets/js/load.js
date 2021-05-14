@@ -1,10 +1,14 @@
 
+// console.log('coucou load.js')
+//
+// const loader = document.querySelector('.loader');
+//
+// console.log(loader)
 
 
-const loader = document.querySelector('.loader');
 
-window.addEventListener('load', () => {
-  loader.classList.add('fondu-out');
-
-})
+// window.addEventListener('load', () => {
+//   loader.classList.add('fondu-out');
+//   console.log('fondu-out')
+// }).setTimeout(5);
 

@@ -20,9 +20,29 @@ export class IntroComponent implements OnInit {
 
   ngOnInit(): void {
 
+    setTimeout( () => {
+      this.chargementSpinner();
+    }, 2000);
+
     this.createAnim();
     this.anim1();
+
   }
+
+  chargementSpinner() {
+    const loader = document.querySelector('.loader');
+
+      loader.classList.add('fondu-out');
+
+  }
+
+  // chargementSpinner() {
+  //     const loader = document.querySelector('.loader');
+  //
+  //     window.addEventListener('load', () => {
+  //         loader.classList.add('fondu-out');
+  //     });
+  //   }
 
 
 
