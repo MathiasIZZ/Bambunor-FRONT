@@ -16,50 +16,14 @@
     <!-- MAIN HEADER -->
     <div id="header">
       <!-- container -->
-      <div class="container">
-        <!-- row -->
-        <div class="row">
-          <!-- LOGO -->
-
 
           <div  class="col-md clearfix">
             <div class="header-ctn">
-              <div id="dropdown" class="dropdown">
-                <a class="" data-toggle="dropdown" aria-expanded="true">
-                  <i class="fa fa-shopping-basket"></i>
-                  <span id="panier"></span>
-                  <div class="qty">{{ cartData.data[0].numInCart !== 0 ? cartData.data.length : 0 }}</div>
-                </a>
-                <div id="droppy" class="cart-dropdown" style="visibility: hidden">
-                  <div class="cart-list" *ngIf="cartData.total !== 0">
-
-                    <div class="product-widget" *ngFor="let c of cartData.data; let i=index">
-                      <div class="product-img">
-                        <img [src]="c.product?.image" alt="{{ c.product.name }}">
-                      </div>
-                      <div class="product-body">
-                        <h3 class="product-name"><a href="#">{{ c.product.name }}</a></h3>
-                        <h4 class="product-price"><span class="qty">{{ c.numInCart }}  x  </span>{{ c.product.price | currency: '€'}}</h4>
-                      </div>
-                      <button class="delete" (click)="cartService.deleteProductFormCart(i)"><i class="fa fa-close"></i></button>
-                    </div>
-                  </div>
-                  <div class="cart-summary">
-                    <small> {{ cartData.data[0].numInCart !== 0 ? cartData.data.length : 0 }}  produit(s)</small>
-                    <h5>TOTAL TTC : {{ cartTotal | currency: '€' }} EUROS.</h5>
-                  </div>
-                  <div class="cart-btns">
-                    <a routerLink="/cart" >Votre panier</a>
-                    <a routerLink="/checkout" >Paiement<i class="fa fa-arrow-circle-right"></i></a>
-                  </div>
-                </div>
-              </div>
-              <!-- /Cart -->
 
               <!-- Menu Toogle -->
               <div class="menu-toggle" id="active-nav">
                 <a>
-                  <i class="fa fa-bars"></i>
+                  <i class="fa-caret-square-down"></i>
                   <span>Menu</span>
                 </a>
               </div>
@@ -67,9 +31,6 @@
             </div>
           </div>
           <!-- /ACCOUNT -->
-        </div>
-        <!-- row -->
-      </div>
       <!-- container -->
     </div>
     <!-- /MAIN HEADER -->

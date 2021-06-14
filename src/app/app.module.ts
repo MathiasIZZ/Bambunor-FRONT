@@ -12,7 +12,6 @@ import { ThankyouComponent } from './components/thankyou/thankyou.component';
 import { HomeComponent } from './components/home/home.component';
 import { ProductComponent } from './components/product/product.component';
 import { CartComponent } from './components/cart/cart.component';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {HttpClientModule} from '@angular/common/http';
 import {NgxSpinnerModule} from 'ngx-spinner';
 import {ToastrModule} from 'ngx-toastr';
@@ -27,7 +26,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { CueilletteComponent } from './components/cueillette/cueillette.component';
 import { HistoireComponent } from './components/histoire/histoire.component';
 import { NewsletterComponent } from './components/newsletter/newsletter.component';
-
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 
 
@@ -69,7 +68,6 @@ export function providerConfig() {
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
     NgxSpinnerModule,
@@ -78,6 +76,7 @@ export function providerConfig() {
     ReactiveFormsModule,
     SocialLoginModule,
     NgxParallaxScrollModule,
+    MatProgressSpinnerModule,
   ],
   providers: [
     {

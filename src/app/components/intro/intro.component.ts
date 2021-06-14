@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { gsap, TimelineMax, TweenMax, Elastic } from 'gsap';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+
 
 
 gsap.registerPlugin(TimelineMax, TweenMax, Elastic);

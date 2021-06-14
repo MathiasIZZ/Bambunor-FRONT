@@ -56,12 +56,9 @@ export class HeaderComponent implements OnInit {
 
 /*
     $(window).scroll( function(event) {
-
       $('.arene').toggleClass('disparition', $(this).scrollTop() > 60);
       $('.arene').toggleClass('fond', $(this).scrollTop() > 600);
-
     });
-
 */
     const activation = document.getElementById('active-nav');
 

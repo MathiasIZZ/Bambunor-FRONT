@@ -4,7 +4,7 @@ import { trigger, transition, style, query, group, animateChild, animate, keyfra
 
 
 
-export const fader =
+/*export const fader =
   trigger('routeAnimations', [
     transition('* <=> *', [
       query(':enter, :leave', [
@@ -23,4 +23,23 @@ export const fader =
       ])
     ]),
 ]);
+*/
 
+export const fader =
+
+  trigger('routeAnimations', [
+
+    transition('<=>* ', [
+
+      style({ opacity: 0 }),
+
+      animate('1000ms ease', style({ opacity: 1 }))
+    ]),
+
+    transition(' <=> *', [
+
+      style({ opacity: 0 }),
+
+      animate('1000ms ease', style({ opacity: 1 }))
+    ]),
+  ]);
