@@ -1,5 +1,5 @@
 
-
+/*
 @font-face {
   font-family: dinpro;
   src: url("../../../assets/fonts/DINPro-Regular.otf");
@@ -7,7 +7,7 @@
 @font-face {
   font-family: dinproBold;
   src: url("../../../assets/fonts/DINPro-Bold.otf");
-}
+}*/
 
 html {
   font-family: dinpro;
@@ -58,12 +58,16 @@ html {
   justify-content: center;
 }
 
+h2 {
+  text-align: center;
+}
+
 .right h2 {
   font-size: 2.5rem !important;
 }
 
 .fontperso {
-  font-family: 'dinpro';
+  font-family: fairplayRegular;
 }
 
 
@@ -109,19 +113,60 @@ html {
 
   transition: 0.2s all;
   -webkit-transition: 0.2s all;
-  width: 100%;
 }
-
+/*
 .ferme:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(2);
-}
+}*/
 
 .col-ferme {
   overflow: hidden;
   padding: 0;
 }
+
+.carroussel {
+  display: flex;
+}
+
+.item {
+  
+}
+
+.image {
+  //flex-grow: 1;
+  display: flex;
+  //flex-shrink: 1;
+  width: 50%;
+  flex-direction: column;
+}
+
+.image:nth-child(1) {
+  margin-right: 1%;
+}
+
+
+.image:nth-child(3) {
+  margin-left: 1%;
+}
+
+.image-custom {
+  
+  width: 50%;
+  margin: 50px auto;
+  
+}
+
+.espaceur {
+  margin-bottom: 200px;
+}
+
+
+
+
+
+
 
 
 
@@ -163,7 +208,7 @@ html {
 
 .zeTitre {
   color: #7B0D1E;
-  font-family: dinproBold;
+  
 }
 
 .strat {
